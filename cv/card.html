@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <script src="bootstrap/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <!-- CSS only -->
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            
+            
+          <!-- <div class="modal" id="mymodal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <img src="img/1.jpg" width="200px" alt="">
+                          <p style="padding-left: 10px;">One of the best perfume in my shop hope you like it</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="modal" id="my">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <img src="img/4.jpg" width="200px" alt="">
+                          <p style="padding-left: 10px;">ancestry is most sell product in my shop hope you it.</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="modal" id="modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <img src="img/2.jpg" width="200px" alt="">
+                          <p style="padding-left: 10px;">the best perfume in my shop hope you like it  for more details</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+        </div>
+    </div>
+      
+      <!-- <div class="row r"></div> -->
+      <script>
+    var obj = [
+        {name:"ESSENCE", des:"One of the best perfume in my shop hope you like it ",im:"img/1.jpg" },
+        {name:"ANCESTRY", des:"ancestry is most sell product in my shop hope you it.",im:"img/4.jpg"},
+        {name:"ESCADE", des:"the best perfume in my shop hope you like it  for more details ",im:"img/2.jpg"},
+    ]
+     
+    var r = document.querySelector(".row");
+    for(var i=0; i<=obj.length;i++)
+    {
+        r.innerHTML += '<div class="card" style="width: 18rem;"><img src="'+obj[i].im+'" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">'+obj[i].name+'</h5><p class="card-text">'+obj[i].des+'</p><button  class="btn btn-info" data-toggle="modal" data-target="#btn'+i+'" >details</button><div class="modal" id="btn'+i+'"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><img src="'+obj[i].im+'" width="200px" alt=""><p style="padding-left: 10px;">'+obj[i].des+'</p></div><div class="modal-footer"><button type="" class="btn btn-danger" data-dismiss="modal">Close</button></div></div></div></div>'
+        }
+    // var a = document.querySelector(".row");
+    // for(var i=0; i<=0;i++)
+    // {
+    //     a.innerHTML += '<div class="card" style="width: 18rem;"><img src="'+obj[1].im+'"  " class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">'+obj[1].name+'</h5><p class="card-text">'+obj[1].des+'</p><button  class="btn btn-info" data-toggle="modal" data-target="#my" >details</button>'
+    //     }    var b = document.querySelector(".row");
+    // for(var i=0; i<=0;i++)
+    // {
+    //     b.innerHTML += '<div class="card" style="width: 18rem;"><img src="'+obj[2].im+'"  class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">'+obj[2].name+'</h5><p class="card-text">'+obj[2].des+'</p><button  class="btn btn-info" data-toggle="modal" data-target="#modal" >details</button>'
+    //     }
+  //       var o = [
+  //       {n:"car1", d:"hahahhah",i:"img/kindpng_4024169.png" },
+  //       {n:"car1", d:"hahahhah",i:"img/kindpng_4024169.png"},
+  //       {n:"car1", d:"hahahhah",i:"img/kindpng_4024169.png"},
+  //       {n:"car1", d:"hahahhah",i:"img/kindpng_4024169.png"}
+  //   ]
+  //   var d = document.querySelector(".row");
+  //   for(var a=0; a<=obj.length;a++)
+  // {
+  //   d.innerHTML += '<div class="modal" id="mymodal"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title"><img src="'+o[a].i+'" width="100%" alt=""></4><p>'+ o[a].d+'</p></div><div class="modal-footer"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button></div></div></div></div>'
+  //   }
+</script>
+</body>
+
+</html>

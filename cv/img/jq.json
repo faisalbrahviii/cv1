@@ -1,0 +1,9 @@
+{
+    "product": [
+        {"name":"led bulb 1","price":"1200","image":"img/1.jpg"},
+        {"name":"led bulb 2","price":"2400","image":"img/2.jpg"},
+        {"name":"led bulb 3","price":"4500","image":"img/3.jpg"},
+        {"name":"led bulb 4","price":"1500","image":"img/4.jpg"}
+        
+    ]
+}
